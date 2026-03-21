@@ -1,0 +1,17 @@
+@startuml
+package "ADK-Transformation" {
+    class "ADK Master Gateway" {
+        + adk_delegate_task(agentRole, taskDescription)
+        + adk_get_ecosystem_health()
+    }
+    
+    enum SidecarAgents {
+        SECURITY
+        LIFECYCLE
+        ENGINEERING
+        BRANDING
+    }
+    
+    "ADK Master Gateway" --> SidecarAgents : "Delegates to"
+}
+@enduml

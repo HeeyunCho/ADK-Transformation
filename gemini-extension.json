@@ -1,0 +1,16 @@
+{
+  "name": "adk-master-gateway",
+  "version": "1.0.0",
+  "description": "Google ADK Sidecar (A2A) Architecture Orchestrator.",
+  "main": "dist/index.js",
+  "tools": [
+    {
+      "name": "adk_delegate_task",
+      "description": "Delegates a complex reasoning task to an autonomous sidecar agent using the A2A protocol."
+    },
+    {
+      "name": "adk_get_ecosystem_health",
+      "description": "Returns the operational status of all ADK Sidecar Agents."
+    }
+  ]
+}
